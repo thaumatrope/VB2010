@@ -47,14 +47,14 @@
             If String.IsNullOrEmpty(in_fat.Text) Or (Int32.TryParse(in_fat.Text, iFat)) Then
                 lb_CurrentCal.Text = iFat * 9
             Else
-                MessageBox.Show("Fat must be in full numbers (Integer)")
+                MessageBox.Show("Data error, number values only!")
                 in_fat.Text = "0"
             End If
         ElseIf currTextBox.Equals(in_carbs) Then
             If String.IsNullOrEmpty(in_carbs.Text) Or (Int32.TryParse(in_carbs.Text, iCarbs)) Then
                 lb_CurrentCal.Text = iCarbs * 4
             Else
-                MessageBox.Show("Carbs must be in full numbers (Integer)")
+                MessageBox.Show("Data error, number values only!")
                 in_carbs.Text = "0"
             End If
 
@@ -62,7 +62,7 @@
             If String.IsNullOrEmpty(in_protein.Text) Or (Int32.TryParse(in_protein.Text, iProtein)) Then
                 lb_CurrentCal.Text = iProtein * 4
             Else
-                MessageBox.Show("Protein must be in full numbers (Integer)")
+                MessageBox.Show("Data error, number values only!")
                 in_protein.Text = "0"
             End If
 
