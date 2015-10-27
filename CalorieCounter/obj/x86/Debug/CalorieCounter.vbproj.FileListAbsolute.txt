@@ -1,0 +1,9 @@
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\bin\Debug\CalorieCounter.exe
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\bin\Debug\CalorieCounter.pdb
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\bin\Debug\CalorieCounter.xml
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.Resources.resources
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.vbproj.GenerateResource.Cache
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.exe
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.xml
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.pdb
+F:\__Source-Code__\visual studio 2010\VB2010\CalorieCounter\obj\x86\Debug\CalorieCounter.CCounter.resources

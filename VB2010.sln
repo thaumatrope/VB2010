@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalorieCounter", "CalorieCounter\CalorieCounter.vbproj", "{63C72B37-5854-42C9-BB50-AB4861528CEA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LynettesImageConsulting", "LynettesImageConsulting\LynettesImageConsulting.vbproj", "{AEA6B25E-1B4F-4600-8F79-CB88F40F91D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C72B37-5854-42C9-BB50-AB4861528CEA}.Debug|x86.ActiveCfg = Debug|x86
+		{63C72B37-5854-42C9-BB50-AB4861528CEA}.Debug|x86.Build.0 = Debug|x86
+		{63C72B37-5854-42C9-BB50-AB4861528CEA}.Release|x86.ActiveCfg = Release|x86
+		{63C72B37-5854-42C9-BB50-AB4861528CEA}.Release|x86.Build.0 = Release|x86
+		{AEA6B25E-1B4F-4600-8F79-CB88F40F91D9}.Debug|x86.ActiveCfg = Debug|x86
+		{AEA6B25E-1B4F-4600-8F79-CB88F40F91D9}.Debug|x86.Build.0 = Debug|x86
+		{AEA6B25E-1B4F-4600-8F79-CB88F40F91D9}.Release|x86.ActiveCfg = Release|x86
+		{AEA6B25E-1B4F-4600-8F79-CB88F40F91D9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

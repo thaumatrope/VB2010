@@ -1,0 +1,9 @@
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\bin\Debug\LynettesImageConsulting.exe
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\bin\Debug\LynettesImageConsulting.pdb
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\bin\Debug\LynettesImageConsulting.xml
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.CCounter.resources
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.Resources.resources
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.vbproj.GenerateResource.Cache
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.exe
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.xml
+F:\__Source-Code__\visual studio 2010\VB2010\LynettesImageConsulting\obj\x86\Debug\LynettesImageConsulting.pdb
