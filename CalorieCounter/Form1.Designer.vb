@@ -22,6 +22,8 @@ Partial Class CCounter
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CCounter))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.in_protein = New System.Windows.Forms.TextBox()
         Me.in_carbs = New System.Windows.Forms.TextBox()
@@ -40,6 +42,7 @@ Partial Class CCounter
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.myPrint = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -52,36 +55,36 @@ Partial Class CCounter
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Location = New System.Drawing.Point(42, 56)
+        Me.GroupBox1.Location = New System.Drawing.Point(42, 66)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(313, 272)
+        Me.GroupBox1.Size = New System.Drawing.Size(240, 272)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "User Input"
         '
         'in_protein
         '
-        Me.in_protein.Location = New System.Drawing.Point(128, 184)
+        Me.in_protein.Location = New System.Drawing.Point(119, 186)
         Me.in_protein.Name = "in_protein"
-        Me.in_protein.Size = New System.Drawing.Size(100, 20)
+        Me.in_protein.Size = New System.Drawing.Size(85, 20)
         Me.in_protein.TabIndex = 6
         Me.in_protein.Text = "0"
         Me.in_protein.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'in_carbs
         '
-        Me.in_carbs.Location = New System.Drawing.Point(128, 113)
+        Me.in_carbs.Location = New System.Drawing.Point(119, 115)
         Me.in_carbs.Name = "in_carbs"
-        Me.in_carbs.Size = New System.Drawing.Size(100, 20)
+        Me.in_carbs.Size = New System.Drawing.Size(85, 20)
         Me.in_carbs.TabIndex = 5
         Me.in_carbs.Text = "0"
         Me.in_carbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'in_fat
         '
-        Me.in_fat.Location = New System.Drawing.Point(128, 39)
+        Me.in_fat.Location = New System.Drawing.Point(119, 41)
         Me.in_fat.Name = "in_fat"
-        Me.in_fat.Size = New System.Drawing.Size(100, 20)
+        Me.in_fat.Size = New System.Drawing.Size(85, 20)
         Me.in_fat.TabIndex = 4
         Me.in_fat.Text = "0"
         Me.in_fat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -124,9 +127,9 @@ Partial Class CCounter
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(390, 56)
+        Me.GroupBox2.Location = New System.Drawing.Point(324, 66)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(313, 272)
+        Me.GroupBox2.Size = New System.Drawing.Size(240, 272)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Output"
@@ -135,7 +138,7 @@ Partial Class CCounter
         '
         Me.lb_TotalFoodItems.AutoSize = True
         Me.lb_TotalFoodItems.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_TotalFoodItems.Location = New System.Drawing.Point(203, 188)
+        Me.lb_TotalFoodItems.Location = New System.Drawing.Point(188, 187)
         Me.lb_TotalFoodItems.Name = "lb_TotalFoodItems"
         Me.lb_TotalFoodItems.Size = New System.Drawing.Size(15, 16)
         Me.lb_TotalFoodItems.TabIndex = 5
@@ -145,7 +148,7 @@ Partial Class CCounter
         '
         Me.lb_TotalCal.AutoSize = True
         Me.lb_TotalCal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_TotalCal.Location = New System.Drawing.Point(203, 117)
+        Me.lb_TotalCal.Location = New System.Drawing.Point(188, 116)
         Me.lb_TotalCal.Name = "lb_TotalCal"
         Me.lb_TotalCal.Size = New System.Drawing.Size(15, 16)
         Me.lb_TotalCal.TabIndex = 4
@@ -155,7 +158,7 @@ Partial Class CCounter
         '
         Me.lb_CurrentCal.AutoSize = True
         Me.lb_CurrentCal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_CurrentCal.Location = New System.Drawing.Point(203, 46)
+        Me.lb_CurrentCal.Location = New System.Drawing.Point(188, 45)
         Me.lb_CurrentCal.Name = "lb_CurrentCal"
         Me.lb_CurrentCal.Size = New System.Drawing.Size(15, 16)
         Me.lb_CurrentCal.TabIndex = 3
@@ -193,7 +196,7 @@ Partial Class CCounter
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(42, 361)
+        Me.Button1.Location = New System.Drawing.Point(42, 22)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -202,7 +205,7 @@ Partial Class CCounter
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(42, 435)
+        Me.Button2.Location = New System.Drawing.Point(261, 22)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -211,7 +214,7 @@ Partial Class CCounter
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(170, 361)
+        Me.Button3.Location = New System.Drawing.Point(150, 22)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
@@ -220,18 +223,26 @@ Partial Class CCounter
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(42, 491)
+        Me.Button4.Location = New System.Drawing.Point(489, 22)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Exit"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'myPrint
+        '
+        Me.myPrint.DocumentName = "document"
+        Me.myPrint.Form = Me
+        Me.myPrint.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
+        Me.myPrint.PrinterSettings = CType(resources.GetObject("myPrint.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
+        Me.myPrint.PrintFileName = Nothing
+        '
         'CCounter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(738, 554)
+        Me.ClientSize = New System.Drawing.Size(605, 365)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -265,5 +276,6 @@ Partial Class CCounter
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents myPrint As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
 
 End Class

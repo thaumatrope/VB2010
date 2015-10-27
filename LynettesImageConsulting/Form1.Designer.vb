@@ -23,6 +23,10 @@ Partial Class CCounter
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -31,21 +35,17 @@ Partial Class CCounter
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.lb_TotalFoodItems = New System.Windows.Forms.Label()
-        Me.lb_TotalCal = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.lb_TotalFoodItems = New System.Windows.Forms.Label()
+        Me.lb_TotalCal = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -64,9 +64,53 @@ Partial Class CCounter
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Services (Input)"
         '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.Location = New System.Drawing.Point(24, 144)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(167, 19)
+        Me.CheckBox7.TabIndex = 10
+        Me.CheckBox7.Text = "Permanent Makeup $ 200"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox4.Location = New System.Drawing.Point(24, 75)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(103, 19)
+        Me.CheckBox4.TabIndex = 9
+        Me.CheckBox4.Text = "Manicure $ 35"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox5.Location = New System.Drawing.Point(24, 109)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(112, 19)
+        Me.CheckBox5.TabIndex = 8
+        Me.CheckBox5.Text = "Makeover $ 125"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox6.Location = New System.Drawing.Point(24, 42)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(115, 19)
+        Me.CheckBox6.TabIndex = 7
+        Me.CheckBox6.Text = "Hair Styling $ 60"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(42, 416)
+        Me.Button1.Location = New System.Drawing.Point(42, 42)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -75,7 +119,7 @@ Partial Class CCounter
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(42, 457)
+        Me.Button2.Location = New System.Drawing.Point(270, 42)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -84,7 +128,7 @@ Partial Class CCounter
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(170, 416)
+        Me.Button3.Location = New System.Drawing.Point(161, 42)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
@@ -93,7 +137,7 @@ Partial Class CCounter
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(42, 526)
+        Me.Button4.Location = New System.Drawing.Point(726, 42)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
@@ -145,50 +189,6 @@ Partial Class CCounter
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Discount (Input)"
         '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(24, 75)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(103, 19)
-        Me.CheckBox4.TabIndex = 9
-        Me.CheckBox4.Text = "Manicure $ 35"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.Location = New System.Drawing.Point(24, 109)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(112, 19)
-        Me.CheckBox5.TabIndex = 8
-        Me.CheckBox5.Text = "Makeover $ 125"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.Location = New System.Drawing.Point(24, 42)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(115, 19)
-        Me.CheckBox6.TabIndex = 7
-        Me.CheckBox6.Text = "Hair Styling $ 60"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.Location = New System.Drawing.Point(24, 144)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(167, 19)
-        Me.CheckBox7.TabIndex = 10
-        Me.CheckBox7.Text = "Permanent Makeup $ 200"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label4)
@@ -207,56 +207,6 @@ Partial Class CCounter
         Me.GroupBox3.TabIndex = 6
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Output"
-        '
-        'lb_TotalFoodItems
-        '
-        Me.lb_TotalFoodItems.AutoSize = True
-        Me.lb_TotalFoodItems.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_TotalFoodItems.Location = New System.Drawing.Point(210, 108)
-        Me.lb_TotalFoodItems.Name = "lb_TotalFoodItems"
-        Me.lb_TotalFoodItems.Size = New System.Drawing.Size(15, 16)
-        Me.lb_TotalFoodItems.TabIndex = 11
-        Me.lb_TotalFoodItems.Text = "0"
-        '
-        'lb_TotalCal
-        '
-        Me.lb_TotalCal.AutoSize = True
-        Me.lb_TotalCal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_TotalCal.Location = New System.Drawing.Point(210, 79)
-        Me.lb_TotalCal.Name = "lb_TotalCal"
-        Me.lb_TotalCal.Size = New System.Drawing.Size(15, 16)
-        Me.lb_TotalCal.TabIndex = 10
-        Me.lb_TotalCal.Text = "0"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(55, 109)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 15)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "without discount"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(72, 79)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 15)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "with discount"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(29, 45)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 16)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "current price"
         '
         'Label4
         '
@@ -308,11 +258,61 @@ Partial Class CCounter
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "total price"
         '
+        'lb_TotalFoodItems
+        '
+        Me.lb_TotalFoodItems.AutoSize = True
+        Me.lb_TotalFoodItems.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_TotalFoodItems.Location = New System.Drawing.Point(210, 108)
+        Me.lb_TotalFoodItems.Name = "lb_TotalFoodItems"
+        Me.lb_TotalFoodItems.Size = New System.Drawing.Size(15, 16)
+        Me.lb_TotalFoodItems.TabIndex = 11
+        Me.lb_TotalFoodItems.Text = "0"
+        '
+        'lb_TotalCal
+        '
+        Me.lb_TotalCal.AutoSize = True
+        Me.lb_TotalCal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_TotalCal.Location = New System.Drawing.Point(210, 79)
+        Me.lb_TotalCal.Name = "lb_TotalCal"
+        Me.lb_TotalCal.Size = New System.Drawing.Size(15, 16)
+        Me.lb_TotalCal.TabIndex = 10
+        Me.lb_TotalCal.Text = "0"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(55, 109)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(95, 15)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "without discount"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(72, 79)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(78, 15)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "with discount"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(29, 45)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(94, 16)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "current price"
+        '
         'CCounter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(824, 658)
+        Me.ClientSize = New System.Drawing.Size(822, 420)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
