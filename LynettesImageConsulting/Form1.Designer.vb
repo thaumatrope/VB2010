@@ -25,24 +25,24 @@ Partial Class CCounter
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CCounter))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.myPrint = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -52,14 +52,58 @@ Partial Class CCounter
         '
         Me.GroupBox2.Controls.Add(Me.RadioButton7)
         Me.GroupBox2.Controls.Add(Me.RadioButton6)
-        Me.GroupBox2.Controls.Add(Me.RadioButton5)
         Me.GroupBox2.Controls.Add(Me.RadioButton4)
+        Me.GroupBox2.Controls.Add(Me.RadioButton5)
         Me.GroupBox2.Location = New System.Drawing.Point(261, 83)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(200, 197)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Services "
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Location = New System.Drawing.Point(24, 150)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(118, 17)
+        Me.RadioButton7.TabIndex = 14
+        Me.RadioButton7.TabStop = True
+        Me.RadioButton7.Text = "Permanent Makeup"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(24, 113)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(73, 17)
+        Me.RadioButton6.TabIndex = 13
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "Makeover"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(24, 36)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(81, 17)
+        Me.RadioButton4.TabIndex = 12
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Hair Styling "
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(24, 75)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(69, 17)
+        Me.RadioButton5.TabIndex = 11
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "Manicure"
+        Me.RadioButton5.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -109,6 +153,39 @@ Partial Class CCounter
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Discount "
         '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(25, 113)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(45, 17)
+        Me.RadioButton3.TabIndex = 9
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "20%"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(25, 75)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(45, 17)
+        Me.RadioButton2.TabIndex = 8
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "10%"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(25, 36)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(49, 17)
+        Me.RadioButton1.TabIndex = 7
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "none"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'myPrint
         '
         Me.myPrint.DocumentName = "document"
@@ -130,6 +207,20 @@ Partial Class CCounter
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Output"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(213, 93)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
+        Me.TextBox2.TabIndex = 14
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(213, 40)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(171, 20)
+        Me.TextBox1.TabIndex = 13
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -149,97 +240,6 @@ Partial Class CCounter
         Me.Label18.Size = New System.Drawing.Size(114, 16)
         Me.Label18.TabIndex = 6
         Me.Label18.Text = "Current Service"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(213, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox1.TabIndex = 13
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(213, 93)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox2.TabIndex = 14
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(25, 42)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(49, 17)
-        Me.RadioButton1.TabIndex = 7
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "none"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(26, 75)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(45, 17)
-        Me.RadioButton2.TabIndex = 8
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "10%"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(25, 113)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(45, 17)
-        Me.RadioButton3.TabIndex = 9
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "20%"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(24, 75)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(69, 17)
-        Me.RadioButton4.TabIndex = 11
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Manicure"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(24, 42)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(81, 17)
-        Me.RadioButton5.TabIndex = 12
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Hair Styling "
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(24, 113)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(73, 17)
-        Me.RadioButton6.TabIndex = 13
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Makeover"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Location = New System.Drawing.Point(24, 151)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(118, 17)
-        Me.RadioButton7.TabIndex = 14
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Permanent Makeup"
-        Me.RadioButton7.UseVisualStyleBackColor = True
         '
         'CCounter
         '
@@ -279,8 +279,8 @@ Partial Class CCounter
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton7 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
 
