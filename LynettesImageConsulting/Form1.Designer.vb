@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CCounter
+Partial Class LynetteIC
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -23,7 +23,7 @@ Partial Class CCounter
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CCounter))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LynetteIC))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
@@ -39,8 +39,8 @@ Partial Class CCounter
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.myPrint = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tbTotal = New System.Windows.Forms.TextBox()
+        Me.tbCurrent = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
@@ -196,8 +196,8 @@ Partial Class CCounter
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.TextBox2)
-        Me.GroupBox4.Controls.Add(Me.TextBox1)
+        Me.GroupBox4.Controls.Add(Me.tbTotal)
+        Me.GroupBox4.Controls.Add(Me.tbCurrent)
         Me.GroupBox4.Controls.Add(Me.Label13)
         Me.GroupBox4.Controls.Add(Me.Label18)
         Me.GroupBox4.Location = New System.Drawing.Point(42, 304)
@@ -207,19 +207,21 @@ Partial Class CCounter
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Output"
         '
-        'TextBox2
+        'tbTotal
         '
-        Me.TextBox2.Location = New System.Drawing.Point(213, 93)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox2.TabIndex = 14
+        Me.tbTotal.Location = New System.Drawing.Point(213, 93)
+        Me.tbTotal.Name = "tbTotal"
+        Me.tbTotal.Size = New System.Drawing.Size(171, 20)
+        Me.tbTotal.TabIndex = 14
+        Me.tbTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox1
+        'tbCurrent
         '
-        Me.TextBox1.Location = New System.Drawing.Point(213, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox1.TabIndex = 13
+        Me.tbCurrent.Location = New System.Drawing.Point(213, 40)
+        Me.tbCurrent.Name = "tbCurrent"
+        Me.tbCurrent.Size = New System.Drawing.Size(171, 20)
+        Me.tbCurrent.TabIndex = 13
+        Me.tbCurrent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label13
         '
@@ -274,8 +276,8 @@ Partial Class CCounter
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tbTotal As System.Windows.Forms.TextBox
+    Friend WithEvents tbCurrent As System.Windows.Forms.TextBox
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton7 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
