@@ -41,7 +41,7 @@ Public Class LynetteIC
             dCurrentService = ManicurePrice - (ManicurePrice * dDiscount)
         ElseIf RadioButton6.Checked = True Then
             dCurrentService = MakeoverPrice - (MakeoverPrice * dDiscount)
-        ElseIf RadioButton6.Checked = True Then
+        ElseIf RadioButton7.Checked = True Then
             dCurrentService = MakeupPrice - (MakeupPrice * dDiscount)
         Else
             dCurrentService = 0D
