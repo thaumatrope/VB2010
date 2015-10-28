@@ -25,6 +25,7 @@ Partial Class CCounter
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CCounter))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.in_protein = New System.Windows.Forms.TextBox()
         Me.in_carbs = New System.Windows.Forms.TextBox()
@@ -50,7 +51,6 @@ Partial Class CCounter
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.myPrint = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -70,7 +70,19 @@ Partial Class CCounter
         Me.GroupBox1.Size = New System.Drawing.Size(183, 317)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "User Input"
+        Me.GroupBox1.Text = "User"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(88, 26)
+        Me.Label7.MaximumSize = New System.Drawing.Size(80, 40)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(57, 32)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Current Grams"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label10
         '
@@ -156,7 +168,7 @@ Partial Class CCounter
         Me.GroupBox2.Size = New System.Drawing.Size(295, 317)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Output"
+        Me.GroupBox2.Text = "Summary"
         '
         'lb_current_protein
         '
@@ -288,7 +300,7 @@ Partial Class CCounter
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Calculate"
+        Me.Button1.Text = "&Calculate"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -297,7 +309,7 @@ Partial Class CCounter
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Print"
+        Me.Button2.Text = "&Print"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -306,7 +318,7 @@ Partial Class CCounter
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Clear"
+        Me.Button3.Text = "C&lear"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
@@ -315,7 +327,7 @@ Partial Class CCounter
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Exit"
+        Me.Button4.Text = "E&xit"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'myPrint
@@ -325,18 +337,6 @@ Partial Class CCounter
         Me.myPrint.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
         Me.myPrint.PrinterSettings = CType(resources.GetObject("myPrint.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
         Me.myPrint.PrintFileName = Nothing
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(88, 26)
-        Me.Label7.MaximumSize = New System.Drawing.Size(80, 40)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(57, 32)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Current Grams"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CCounter
         '
